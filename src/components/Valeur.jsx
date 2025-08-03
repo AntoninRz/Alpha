@@ -12,9 +12,9 @@ const Valeur = () => {
                 <div className='absolute left-4 top-4 text-white'>
                     <h4 className="text-2xl font-bold">01</h4>
                 </div>
-                <div className='w-fit flex flex-col md:flex-row z-10 items-center md:items-start justify-center md:justify-start gap-4 lg:gap-8 absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-4 backdrop-blur-sm  border-t border-b border-white py-2 lg:border-0 overflow-hidden'>
+                <div className='w-fit flex flex-col md:flex-row z-10 items-center md:items-start justify-center md:justify-start gap-4 lg:gap-8 absolute bottom-0 md:bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-4 backdrop-blur-sm rounded-2xl border-t border-b border-white py-2 lg:border-0 overflow-hidden'>
                     <h3 className='text-yellow-500 text-xl font-semibold'>Apprendre sans se forcer.</h3>
-                    <p className='text-zinc-300 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
+                    <p className='text-zinc-300 w-80 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
                 </div>
                 <img className='absolute bottom-0 right-4 w-72' src={assets.couple_2} alt="Couple" />
             </div>
@@ -22,9 +22,9 @@ const Valeur = () => {
                 <div className='absolute right-4 top-4 text-white'>
                     <h4 className="text-2xl font-bold">02</h4>
                 </div>
-                <div className='w-fit flex flex-col md:flex-row z-20 items-center md:items-start justify-center md:justify-end gap-4 lg:gap-8 absolute bottom-4 right-1/2 transform translate-x-1/2 lg:translate-x-0 lg:right-4 backdrop-blur-sm  border-t border-b border-white py-2 lg:border-0 overflow-hidden'>
+                <div className='w-fit flex flex-col md:flex-row z-20 items-center md:items-start justify-center md:justify-end gap-4 lg:gap-8 absolute bottom-0 md:bottom-4 right-1/2 transform translate-x-1/2 lg:translate-x-0 lg:right-4 backdrop-blur-sm rounded-2xl border-t border-b border-white py-2 lg:border-0 overflow-hidden'>
                     <h3 className='text-yellow-500 text-xl font-semibold'>Danser avec respect et confiance.</h3>
-                    <p className='text-zinc-300 w-90 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
+                    <p className='text-zinc-300 w-80 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
                 </div>
                 <img className='absolute top-0 left w-72 z-10' src={assets.couple_3} alt="Couple" />
             </div>
