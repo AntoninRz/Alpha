@@ -21,7 +21,7 @@ import profil_6 from './profil_6.png'
 import profil_7 from './profil_7.png'
 import profil_8 from './profil_8.png'
 import profil_9 from './profil_9.png'
-import Vidéo from './Vidéo.png'
+import alpha_video from './alpha_video.mp4'
 
 export const assets = {
     logo,
@@ -46,7 +46,7 @@ export const assets = {
     profil_7,
     profil_8,
     profil_9,
-    Vidéo,
+    alpha_video,
 
 }
 
