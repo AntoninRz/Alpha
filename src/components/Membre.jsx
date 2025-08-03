@@ -12,7 +12,7 @@ const Membre = () => {
     useEffect(() => {
         const updateCardsToShow = () => {
             if(window.innerWidth >= 1024) {
-                setCardsToShow(2)
+                setCardsToShow(3)
             } else {
                 setCardsToShow(1)
             }
@@ -38,29 +38,36 @@ const Membre = () => {
                 threshold: 0.5,
             }
         )
-        const carouselCards
-    })
+        const carouselCards = carouselRef.current?.querySelectorAll(".membre")
+        if (carouselCards) {
+            carouselCards.forEach((card) => observer.observe(card))
+        }
+
+        return () => {
+            if (carouselCards) {
+                carouselCards.forEach((card) => observer.unobserve(card))
+            }
+        }
+        
+    }, [carouselRef, cardsToShow])
 
     const nextMembre = () => {
-        const maxIndex = membresData.length - cardsToShow;
-        setCurrentIndex((prevIndex) => {
-            if (prevIndex >= maxIndex) {
-                return 0;
-            }
-            return prevIndex + 1;
-        });
+        if (carouselRef.current) {
+            const cardWidth = carouselRef.current.querySelector('.membre').offsetWidth
+            const scrollAmount = cardWidth + 16
+            carouselRef.current.scrollLeft += scrollAmount;
+        }
     };
 
     const prevMembre = () => {
-        const maxIndex = membresData.length - cardsToShow;
-        setCurrentIndex((prevIndex) => {
-            if (prevIndex === 0) {
-                return maxIndex;
-            }
-            return prevIndex - 1;
-        });
+        if (carouselRef.current) {
+            const cardWidth = carouselRef.current.querySelector('.membre').offsetWidth;
+            const scrollAmount = cardWidth + 16
+            carouselRef.current.scrollLeft -= scrollAmount;
+        }
     };
-    const translateXValue = -(currentIndex * (100 / cardsToShow));
+
+    const cardWidthPercentage = `calc(${100 / cardsToShow}%)`;
 
   return (
         <div className="w-full p-4 md:p-8 bg-yellow-400/4 lg:bg-[radial-gradient(ellipse_25%_40%_at_50%_50%,_rgba(255,_233.95,_2.45,_0.30)_0%,_rgba(153,_140.37,_1.47,_0)_100%)] overflow-hidden flex flex-col items-center gap-8">
@@ -83,10 +90,10 @@ const Membre = () => {
                 </button>
             </div>
 
-            <div className="flex w-full gap-4 overflow-x-scroll snap-x snap-mandatory hide-scrollbar lg:justify-center" style={{ scrollbarWidth: 'none' }} >
+            <div ref={carouselRef} className="flex w-full gap-16 overflow-x-scroll snap-x snap-mandatory hide-scrollbar" style={{ scrollbarWidth: 'none' }} >
                 {membresData.map((membre, index) => (
-                    <div key={index} className="membre relative flex-none w-72 h-96 border border-white hover:border-yellow-500 rounded-xl snap-start" >
-                        <img src={membre.profilePic} alt={`Profil de ${membre.name}`} className="w-full h-full object-cover" />
+                    <div key={index} data-index={index} className="membre relative flex-none h-fit border border-white hover:border-yellow-500 rounded-xl snap-start" style={{ flexBasis: cardWidthPercentage }}>
+                        <img src={membre.profilePic} alt={`Profil de ${membre.name}`} className="w-full" />
                         <div className="absolute top-4 left-4 flex gap-4 p-2 backdrop-blur-sm border-t border-b border-white z-10 rounded-md">
                             {membre.socials.map((social, socialIndex) => (
                                 <img key={socialIndex} src={social} alt="" />
