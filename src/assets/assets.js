@@ -15,6 +15,12 @@ import couple_3 from './couple_3.png'
 import profil_1 from './profil_1.png'
 import profil_2 from './profil_2.png'
 import profil_3 from './profil_3.png'
+import profil_4 from './profil_4.png'
+import profil_5 from './profil_5.png'
+import profil_6 from './profil_6.png'
+import profil_7 from './profil_7.png'
+import profil_8 from './profil_8.png'
+import profil_9 from './profil_9.png'
 import Vidéo from './Vidéo.png'
 
 export const assets = {
@@ -34,6 +40,12 @@ export const assets = {
     profil_1,
     profil_2,
     profil_3,
+    profil_4,
+    profil_5,
+    profil_6,
+    profil_7,
+    profil_8,
+    profil_9,
     Vidéo,
 
 }
@@ -60,13 +72,37 @@ export const membresData = [
     {
         name: 'Pacy Pacy',
         role: 'Conseillère de danse',
-        profilePic: assets.profil_3,
+        profilePic: assets.profil_4,
         socials: [facebook, instagram, youtube],
     },
     {
-        name: 'Six Six',
-        role: 'Responsable salle',
-        profilePic: assets.profil_1,
+        name: 'Safidy Safidy',
+        role: 'Responsable communication',
+        profilePic: assets.profil_5,
+        socials: [facebook, instagram, youtube],
+    },
+    {
+        name: 'Miora Miora',
+        role: 'Secretaire',
+        profilePic: assets.profil_6,
+        socials: [facebook, instagram, youtube],
+    },
+    {
+        name: 'Sitraka Sitraka',
+        role: 'Responsable vehicule',
+        profilePic: assets.profil_7,
+        socials: [facebook, instagram, youtube],
+    },
+    {
+        name: 'Mialy Mialy',
+        role: 'Animatrice',
+        profilePic: assets.profil_8,
+        socials: [facebook, instagram, youtube],
+    },
+    {
+        name: 'Mandresy Mandresy',
+        role: 'Responsable Jeux',
+        profilePic: assets.profil_9,
         socials: [facebook, instagram, youtube],
     },
 ]

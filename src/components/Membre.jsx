@@ -92,8 +92,8 @@ const Membre = () => {
 
             <div ref={carouselRef} className="flex w-full gap-16 overflow-x-scroll snap-x snap-mandatory hide-scrollbar" style={{ scrollbarWidth: 'none' }} >
                 {membresData.map((membre, index) => (
-                    <div key={index} data-index={index} className="membre relative flex-none h-fit border border-white hover:border-yellow-500 rounded-xl snap-start" style={{ flexBasis: cardWidthPercentage }}>
-                        <img src={membre.profilePic} alt={`Profil de ${membre.name}`} className="w-full" />
+                    <div key={index} data-index={index} className="membre overflow-hidden relative flex-none h-[400px] border border-white hover:border-yellow-500 rounded-xl snap-start" style={{ flexBasis: cardWidthPercentage }}>
+                        <img src={membre.profilePic} alt={`Profil de ${membre.name}`} className="w-full object-cover rounded-xl" />
                         <div className="absolute top-4 left-4 flex gap-4 p-2 backdrop-blur-sm border-t border-b border-white z-10 rounded-md">
                             {membre.socials.map((social, socialIndex) => (
                                 <img key={socialIndex} src={social} alt="" />
