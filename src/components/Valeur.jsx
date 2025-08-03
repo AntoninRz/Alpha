@@ -14,7 +14,7 @@ const Valeur = () => {
                 </div>
                 <div className='w-fit flex flex-col md:flex-row z-10 items-center md:items-start justify-center md:justify-start gap-4 lg:gap-8 absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-4 backdrop-blur-sm  border-t border-b border-white py-2 lg:border-0 overflow-hidden'>
                     <h3 className='text-yellow-500 text-xl font-semibold'>Apprendre sans se forcer.</h3>
-                    <p className='text-zinc-300 w-90 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
+                    <p className='text-zinc-300 text-center md:text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent</p>
                 </div>
                 <img className='absolute bottom-0 right-4 w-72' src={assets.couple_2} alt="Couple" />
             </div>
