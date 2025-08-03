@@ -14,10 +14,10 @@ const header = () => {
                         <p className="text-fuchsia-950 text-5xl font-bold leading-12 capitalize mb-4"> La Danse, une Passion du corps</p>
                         
                         <p className="px-8 md:px-0 text-center md:text-justify w-full text-zinc-400 font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac orci vel elit volutpat aliquam. Praesent lobortis, sapien quis ullamcorper.</p>
-                        <div className='flex gap-4 rounded-lg border-2 border-white text-white px-6 py-2 mt-4'>
-                            <a className=''>Suivre nos cours</a>
+                        <a href='#' className='w-fit flex gap-4 rounded-lg border-2 border-white text-white px-6 py-2 mt-4'>
+                            Suivre nos cours
                             <img className='w-5 rotate-90 pt-2' src={assets.triangle_line} alt="arrow" />
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

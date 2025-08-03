@@ -14,9 +14,10 @@ const Apropos = () => {
                 <h4 className="text-2xl font-bold">+30</h4>
                 <p className='text-gray-400'>Danseurs Actifs</p>
             </div>
-            <div className='absolute bottom-4 left-1/2 transform -translate-x-1/2 text-yellow-300 rounded-full border-t-2 border-b-2 border-yellow-500 px-4 py-1 backdrop-blur-sm flex gap-2'>
-                <a className='text-semibold text-center' href="#">En savoir plus sur nous</a>
-                <img className='rotate-90' src={assets.triangle_yellow_line} alt="arrow" />
+            <div className='text-yellow-300 absolute bottom-4 left-1/2 transform -translate-x-1/2'>
+                <a className='text-semibold text-center rounded-full border-t-2 border-b-2 border-yellow-500 px-4 py-1 backdrop-blur-sm flex gap-2' href="#">En savoir plus sur nous
+                    <img className='rotate-90' src={assets.triangle_yellow_line} alt="arrow" />
+                </a>  
             </div>
         </div>
         <div className='flex-1 w-full flex justify-around'>
@@ -24,11 +25,11 @@ const Apropos = () => {
                 <div className='border-4 border-white px-4 py-2 w-fit rounded-2xl'>
                     <h2 className='text-2xl capitalize text-white'>à propos de nous</h2>
                 </div>
-                <div className='text-zinc-400 text-center md:text-justify flex flex-col gap-8'>
+                <div className='text-zinc-300 text-center md:text-justify flex flex-col gap-8'>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod saepe dolor repellat optio! Autem incidunt accusamus <span className='text-yellow-400'>atque tempora dolor.</span></p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span className='text-yellow-400'>atque tempora dolor.</span> Necessitatibus numquam voluptas autem et delectus. Ipsa necessitatibus dignissimos reiciendis vero temporibus?</p>
                 </div>
-                <div className='flex flex-col md:flex-row justify-center gap-4 md:justify-between items-center text-zinc-500 mt-6'>
+                <div className='flex flex-col md:flex-row justify-center gap-4 md:justify-between items-center text-zinc-500 mt-6 z-10'>
                     <a className='flex gap-2 hover:text-white hover:underline' href="#">
                         <img src={assets.facebook} alt="facebook" />
                         Alpha - Tsiry & Santatra
