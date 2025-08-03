@@ -17,8 +17,8 @@ const CTA = () => {
             </div>
         </div>
         <div className='flex-1/2'>
-            <div className='cursor-pointer'>
-                <img src={assets.Vidéo} alt="" />
+            <div className='cursor-pointer h-60 md:h-80 rounded-md border border-white p-1'>
+                <iframe className='w-full h-full' src="https://www.youtube.com/embed/Df9GrBwgyjQ?list=RDDf9GrBwgyjQ" allowfullscreen></iframe>
             </div>
         </div>
     </div>
