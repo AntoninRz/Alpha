@@ -22,6 +22,9 @@ import profil_7 from './profil_7.png'
 import profil_8 from './profil_8.png'
 import profil_9 from './profil_9.png'
 import alpha_video from './alpha_video.mp4'
+import bachata from './bachata.mp4'
+import kizomba from './kizomba.mp4'
+import salsa from './salsa.mp4'
 
 export const assets = {
     logo,
@@ -47,6 +50,9 @@ export const assets = {
     profil_8,
     profil_9,
     alpha_video,
+    bachata,
+    kizomba,
+    salsa,
 
 }
 

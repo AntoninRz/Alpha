@@ -20,12 +20,13 @@ const CTA = () => {
         <div className='flex-1/2'>
             <div className='cursor-pointer h-60 md:h-80 rounded-md border bg-black border-white p-1'>
                 <video onLoad={lazy} className="h-full w-full rounded-lg" controls autoPlay muted>
-                    <source className="h-full w-full rounded-lg"
+                    <source 
+                        className="h-full w-full rounded-lg"
                         src={assets.alpha_video}
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
-                    </video>
+                </video>
             </div>
         </div>
     </div>
